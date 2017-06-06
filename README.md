@@ -11,6 +11,7 @@ Health is an Apache Cordova project built with **Backbone Marionette**, **jQuery
 * **iOS SDK** - if targeting the **iOS** platform
 * **Gradle** - version 3.5+
 ### Cordova plugin dependencies:
+* Run `[sudo] cordova plugin add [plugin-name]'
 * cordova-plugin-compat 1.0.0 "Compat"
 * cordova-plugin-device 1.1.6 "Device"
 * cordova-plugin-dialogs 1.3.3 "Notification"
