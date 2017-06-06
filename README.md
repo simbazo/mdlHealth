@@ -1,6 +1,6 @@
 # MiDigitalLife Health App Repository
 
-Health is an Apache Cordova project built with **Backbone Marionette**, **jQuery Mobile** and **Bootstrap**. It may used to generate a hybrid web or mobile application. The application is essentially a reader that renders HTML and PDF medical documentation. 
+Health is an Apache Cordova project built with **Backbone Marionette**, **jQuery Mobile** and **Bootstrap**. It may be used to generate a hybrid web or mobile application. The application is essentially a reader that renders HTML and PDF medical documentation. 
 
 ## Getting Started with Health
 ### Prerequisites:
