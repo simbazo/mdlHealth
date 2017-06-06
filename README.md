@@ -16,7 +16,7 @@ Health is an Apache Cordova project built with **Backbone Marionette**, **jQuery
 * Clear the contents of the **/data** folder and copy the json data, images, PDFs and other content files into it.
 * If you are building an iOS mobile app, add the iOS platform:
     `sudo cordova platform add ios`
-* Ensure you have a device plugged in (or use a virtual device, such as offered by <https://www.genymotion.com>). Then launch the app:
+* Ensure you have a device plugged into a local USB port (or use a virtual device, such as offered by <https://www.genymotion.com>). Then launch the app:
     `[sudo] cordova run android | ios`
 
 
