@@ -1,0 +1,42 @@
+<div class="ui-corner-all custom-corners">
+    <div class="ui-bar ui-bar-a ui-bar-triage">
+        <h3>Patient save and print</h3>
+    </div>
+    <div class="ui-body ui-body-a">
+        <div>
+            <pre>
+                var data = {
+                    name: $('#text-h-3').text(),
+                    dob: $('#text-h-4').text(),
+                    folder: $('#text-h-5').text(),
+                    color: triageModel.attributes.Color,
+                    score: triageModel.attribute.Score,
+                    syndrome: triageModel.attribute.Syndrome,
+                    mobility: triageModel.attribute.Mobility,
+                    rr: triageModel.attribute.RR,
+                    hr: triageModel.attribute.HR,
+                    sbp: triageModel.attribute.SBP,
+                    temp: triageModel.attribute.Temp.
+                    avpu: triageModel.attribute.AVPU,
+                    trauma: triageModel.attribute.Trauma
+                }
+
+                var jsonData = JSON.stringify(data); 
+
+                $.ajax({
+                    type: "POST",
+                    url: [url-to-service]/[service-name],
+                    data: jsonData,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function(msg) {
+                        //now print the triage label
+                    }
+                });
+            </pre>
+        </div>
+        <p class="ui-btn-container-triage">
+            <button class="ui-btn ui-btn-b ui-icon-check ui-btn-icon-left ui-shadow ui-corner-all" type="button">Next</button>
+        </p>
+    </div>
+</div>

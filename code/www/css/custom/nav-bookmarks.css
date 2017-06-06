@@ -1,0 +1,13 @@
+#menu-bookmarklist-panel .menu-item-container {
+    padding: 0px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#menu-bookmarklist-panel .menu-item-container-hilite {
+    background-color: #5B88C6 !important;
+}
+
+#menu-bookmarklist-panel li h2 {
+    cursor: pointer
+}

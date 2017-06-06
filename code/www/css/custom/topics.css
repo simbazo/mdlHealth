@@ -1,0 +1,94 @@
+#contentHeader {
+  position: absolute;
+  top: 2.8em;
+  left: 30%;
+  z-index: 999;
+  width: 66.3%;
+  overflow-x: hidden;
+}
+
+.subheader {
+    margin: 0px;
+    float: right;
+    vertical-align: middle;
+    /*line-height: 1.33em;*/
+}
+
+.opentip-container {
+    display: none;
+}
+
+#mainPanel {
+    padding: 60px 10px 10px 10px;
+    font-size: 14px;
+}
+
+#mainPanel ul li {
+    color: #777;
+    font-size: 14px;
+}
+
+#mainPanel h2, .h2 {
+    margin: 20px 0px;
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+}
+
+#mainPanel h2:first-child, .h2:first-child {
+    margin: 10px 0px 20px 0px;
+}
+
+#mainPanel td {
+    padding: 2px;
+    color: #777;
+    font-size: 14px;
+}
+
+#mainPanel sup {
+    color: Red;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#content-panel .marker {
+    display: none;
+}
+/*
+#newsfeed th, td {
+    white-space: nowrap !important;
+}*/
+
+#content-panel th, td {
+    /*white-space: normal !important;*/
+	max-width: 520px !important;
+	padding:5px !important;	
+}
+
+#feedTable  th, #feedTable td {
+    white-space: normal !important;
+<<<<<<< .mine
+}
+
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -o-user-select: none;
+   user-select: none;
+||||||| .r1032
+}
+
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -o-user-select: none;
+   user-select: none;
+=======
+>>>>>>> .r1035
+}

@@ -1,0 +1,115 @@
+
+/* Other              */
+#content-panel .vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+}
+
+
+/* Indexes - not showing  in app or output */
+
+#content-panel .marker {
+        display: none;
+}
+
+#content-panel .indexa {
+        display: none;
+}
+
+#content-panel .indexb {
+        display: none;
+}
+
+#content-panel .indexdrug {
+        display: none;
+}
+
+
+/* highlighting existing test for data elements */
+#content-panel .atc {
+        color: blue;
+        font-weight:bold;
+        padding:0 5px;
+        border-left:2px solid blue;
+        border-right:2px solid blue;
+}
+
+#content-panel .schedule {
+        color:#FFFFFF;
+        background-color:black;
+        padding:3px;
+        font-weight:bold;
+}
+
+#content-panel .inn {
+        color: Green;
+        font-weight:bold;
+        border-right:2px solid green;
+        border-left:2px solid green;
+        padding: 0 5px;
+}
+
+#content-panel .edl {
+        color: darkorange;
+        font-weight:bold;
+        border-right:2px solid darkorange;
+        border-left:2px solid darkorange;
+        padding: 0 5px;
+}
+
+
+/* Drugs in the text */
+
+#content-panel .innname {
+        color:darkBlue;
+        font-weight:bold;
+        font-style:italic;
+}
+
+#content-panel .drugname {
+        color:Blue;
+        font-weight:bold;
+        font-style:italic;
+}
+
+#content-panel .tradename {
+        color:lightBlue;
+        font-weight:bold;
+        font-style:italic;
+}
+
+#content-panel .vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+}
+/* Pathogens */
+
+#content-panel .pathogen_bacteria {
+        color:green;
+        font-style:italic;
+        font-weight:bold;
+}
+
+#content-panel .pathogen_virus {
+        color:green;
+        font-weight:bold;
+}
+
+#content-panel .pathogen_fungus {
+        color:lightgreen;
+        font-style:italic;
+        font-weight:bold;
+}
+
+#content-panel .pathogen_protozoa {
+        color:darkgreen;
+        font-weight:bold;
+}
+
+#content-panel .pathogen_prion {
+        color:darkgreen;
+        font-weight:bold;
+        font-style:italic;
+}
+
+

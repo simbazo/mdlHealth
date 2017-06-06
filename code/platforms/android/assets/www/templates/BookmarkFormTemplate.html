@@ -1,0 +1,18 @@
+<div class="ui-corner-all custom-corners">    
+    <div class="ui-bar ui-bar-a">
+        <h2 data-nodeID="<%= ID %>">Create a bookmark</h2>
+    </div>
+    <div class="ui-body ui-body-a">
+        <form>
+            <label for="txtBookmarkName" class="ui-hidden-accessible">Topic heading:</label>
+            <input name="txtBookmarkName" id="txtBookmarkName" value="<%= Header %>" placeholder="Topic heading" type="text" data-theme="a">
+
+            <label for="txtBookmarkComment" class="ui-hidden-accessible">Topic comment:</label>
+            <textarea id="txtBookmarkComment" cols="40" rows="8" name="textarea" placeholder="Topic comment"></textarea>
+
+            <button id="btnBookmarkCancel" type="button" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-delete">Cancel</button>
+            &nbsp;&nbsp;
+            <button id="btnBookmarkCreate" type="button" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Create</button>
+        </form>
+    </div>
+</div>
