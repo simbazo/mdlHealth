@@ -1,0 +1,141 @@
+﻿App.Views.ContentFileView = Backbone.Marionette.ItemView.extend({
+    template: this.template,
+
+    initialize: function (options) {
+    },
+
+    onRender: function () {
+        this.getLocalUrl().done(
+            function (url) {
+                //var mimeType = App.Utils.getMimeType(path);
+                var mimeType = "application/pdf";
+
+                try {
+                    SitewaertsDocumentViewer.canViewDocument(
+                        path,
+                        mimeType,
+                        {},
+                        function () {
+                            //onPossible
+                            parent.showDocument(path, mimeType, {});
+                        },
+                        function (appId, installer) {
+                            if (confirm("Do you want to install the free PDF Viewer App " + appId + " for your device?")) {
+                                installer();
+                                parent.showDocument(path, mimeType, {});
+                            } else {
+                                alert("Your document cannot be displayed until the PDF Viewer App has been installed on your device.");
+                            }
+                            //parent.installHelperPlugin();
+                        },
+                        function () {
+                            alert('The media type of this document cannot be shown.');
+                        },
+                        function (error) {
+                            alert("An error has occurred whilst trying to read the document and it cannot be shown.");
+                        }
+                    );
+                } catch (e) {
+                    alert('Cannot create an instance of SitewaertsDocumentViewer plugin');
+                }
+            }
+        ).fail(
+            function (err) {
+                alert('The requested file could not be downloaded to your device.');
+            }
+        );
+    },
+
+    getLocalUrl: function () {
+        var parent = this;
+        var defer = $.Deferred();
+        var path = App.Config.appDataPath + 'files/' + this.model.attributes.ID + '.' + this.model.attributes.MediaExt;
+
+        //if the file doesn't exist locally, download it now
+        window.resolveLocalFileSystemURL(path,
+            function () {
+                //file exists
+                defer.resolve(path);
+            },
+            function () {
+                //file doesn't exist so download it
+                var downloadPath = App.Config.downloadDomain + App.Config.downloadPath + 'files/' + parent.model.attributes.ID + '.' + parent.model.attributes.MediaExt;
+                var fileTransfer = new FileTransfer();
+
+                fileTransfer.download(downloadPath, path,
+                    function (entry) {
+                        defer.resolve(path);
+                    },
+                    function (err) {
+                        defer.reject(err);
+                    }
+                );
+            }
+        );
+
+        return defer.promise();
+    },
+
+    showDocument: function (path, mimeType, options) {
+        var parent = this;
+
+        try {
+            SitewaertsDocumentViewer.viewDocument(
+                path,
+                mimeType,
+                options,
+                function () {
+                },
+                function () {
+                    parent.deleteDocument(path);
+                },
+                function () {
+                    alert('this is the onMissingApp function');
+                },
+                function () {
+                    alert('this is the onError function');
+                }
+            );
+        } catch (e) {
+            alert('Cannot readthe document with the SitewaertsDocumentViewer plugin');
+        }
+    },
+
+    installHelperPlugin: function() {
+        if (confirm("Do you want to install the free PDF Viewer App " + appId + " for your device?")) {
+            installer();
+            this.showDocument(path, mimeType, {});
+        } else {
+            alert("Your document cannot be displayed until the PDF Viewer App has been installed on your device.");
+        }
+    },
+
+    deleteDocument: function (path) {
+        var defer = $.Deferred();
+
+        if (App.Config.contentLocation.toLowerCase() === "cloud") {
+            var filepath = "file:///storage/emulated/0";
+            var filepath = path.substring(0, path.lastIndexOf("/"));
+            var filename = path.substring(path.lastIndexOf("/") + 1);
+
+            window.resolveLocalFileSystemURL(path, function (dir) {
+                dir.getFile(filename, { create: false }, function (fileEntry) {
+                    fileEntry.remove(function () {
+                        // The file has been removed succesfully
+                        defer.resolve();
+                    }, function (error) {
+                        // Error deleting the file
+                        defer.reject(error);
+                    }, function () {
+                        // The file doesn't exist
+                        defer.resolve();
+                    });
+                });
+            });
+        } else {
+            defer.resolve();
+        }
+        
+        return defer.promise()
+    }
+});

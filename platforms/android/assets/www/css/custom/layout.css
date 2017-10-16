@@ -1,0 +1,384 @@
+html, body {
+    height: 100%;
+     overflow-x: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: block !important;
+}
+
+.ui-header .ui-title {
+    margin: 0 20px;
+    text-align: left;
+}
+
+.ui-header .ui-btn { 
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.ui-header h1 { 
+    margin-top: 1.5em;
+    margin-bottom: 1.1em;
+}
+
+.ui-header .ui-btn-right { 
+    margin-top: 2.0em !important;
+}
+
+.ui-header .ui-bar {
+    padding-left: 0;
+}
+
+.ui-footer {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.ui-navbar {
+    margin-bottom: -20px !important;
+}
+
+body.ui-mobile-viewport {
+    overflow-y: visible;
+}
+
+.ui-mobile .ui-page-active {
+    overflow-y: hidden !important;
+}
+
+.hide {
+    display: none;
+}
+
+.ui-collapsible-set {
+    margin: 0 0;
+}
+
+.ui-collapsible-set .ui-body {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    border: none;
+}
+
+#add-form .ui-collapsible-content {
+    padding: 0.25em 0.5em;
+}
+
+
+#add-form label {
+    font-size: 0.95em;
+}
+
+/* customisation for registration page slider */
+.ui-slider input {
+    display: none;
+}
+
+.ui-slider .ui-slider-track {
+    margin-left: 0px;
+}
+
+/* Wrapper and fixed toolbars positioning (for reveal and push) */
+.ui-panel .ui-panel-open {
+    position:fixed;
+}
+
+#nav-panel {
+    height: 100% !important;
+    height: 100vh !important;
+    padding-right: 1px;
+    background-color: #1D1D1D;
+    padding-bottom: 3em;
+}
+
+.ui-panel-wrapper.ui-panel-page-content-open {
+    position:fixed;
+}
+
+#content-panel {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+	<!-- now -->
+	width: 100% !important;
+	height: 100% !important;
+}
+
+#content-panel .ui-body {
+    border-bottom: 0px !important;
+}
+
+#content-panel .ui-collapsible-set {
+    border-bottom: 1px solid #ddd !important;
+}
+
+
+/***** new custom home image for client ****/
+.ui-icon-client:after {
+	background-image: url("../../images/client-home.png");
+}
+
+/* scrolling iframe for terms and conditions on register form */
+.terms-scroll-wrapper {
+    /*overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;*/
+    width: 100%;
+    height: auto;
+}
+
+.terms-scroll-wrapper iframe {
+    width: 100%;
+    border: 1px solid #DDDDDD;
+}
+
+/* borders on images in the content panel */
+#content-panel .parent {
+    /*border: 1px solid #d3d3d3;*/
+}
+
+#content-panel section {
+    border: 1px solid #a3a3a3;
+    margin: 5px 0px;
+    background-color: #d3d3d3;
+}
+
+#content-panel img:hover {
+    cursor: pointe;
+}
+
+@media only screen and (orientation: portrait) {
+    #globalImagePopup-popup.ui-popup-container, #globalImagePopup.ui-popup {
+        height: 95%;
+        width: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden !important;
+        /*position: relative;*/
+        /*position: absolute;
+        top: 0;
+        left: 0;*/
+    }
+    
+    #globalImagePopup section, #globalImagePopup .parent, #globalImagePopup .panzoom {
+        overflow: hidden !important;
+        height: 100%;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #globalImagePopup-popup.ui-popup-container, #globalImagePopup.ui-popup {
+        width: 100%;
+        height: 95%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        vertical-align: middle;        
+        overflow: hidden !important;
+        /*display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;*/
+    }
+    
+    #globalImagePopup section, #globalImagePopup .parent, #globalImagePopup .panzoom {
+        overflow: hidden !important;
+        height: 100%;
+    }
+}
+
+#globalImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#globalImagePopup-popup .ui-btn-right {
+    right: 1.75em;
+    top: 1.5em;
+    overflow: hidden;
+}
+
+#toc-search-input:disabled {
+    background-color: #e1e1e1;
+    color: #000000 !important;
+}
+
+.ui-header .ui-btn {
+    padding: 5px 5px;
+}
+	
+.ui-filter-inset {
+    margin-top: 0;
+}
+
+.hidden-element {
+	display: none !important;
+}
+
+#index-autocomplete-input {
+    background-color: #333;
+    color: #fff;
+    opacity: 1;
+}
+@media only screen and (orientation: portrait) {
+    #contents-portrait-divider {
+	/*-webkit-top-margin-before: 75px !important;
+	-webkit-top-margin-start: 75px !important;
+	margin-top: 75px !important;*/
+    }
+}
+
+
+@media only screen and (orientation: landscape) {
+    #contents-portrait-divider {
+	/*margin-top: 75px !important;*/
+    }
+}
+
+#menu-contentlist-panel .ui-listview > li p {
+    white-space: normal !important;
+}
+
+
+#index-autocomplete .menu-item-text {
+    white-space: normal !important;
+}
+
+/*@media screen and (max-width: 750px) {
+    #content-panel .panzoom > table {
+        overflow-x: scroll !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+}*/
+
+@media screen and (max-width: 750px) {
+    #content-panel .panzoom {
+        overflow-x: scroll !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+}
+
+#content-panel .panzoom > table {
+    /*overflow-x: scroll !important;
+    -webkit-overflow-scrolling: touch !important;*/    
+    width: 100%!important;
+    height: auto!important;
+    overflow: scroll!important;
+    overflow-y: hidden!important;
+ /*   white-space: nowrap!important;*/
+    -webkit-overflow-scrolling: touch;
+}
+
+#footer-panel #footerFilterBar {
+	white-space:nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;	
+}
+
+#footer-panel div[data-role="navbar"]  {
+	
+}
+
+#footer-panel #footerFilterBar li {
+	display:inline-block;
+	padding: 12px 20px 12px 20px;
+}
+
+#footer-panel #footerFilterBar li .active {
+	background-color: #3388cc !important;
+	color: red !important;
+}
+
+#footer-panel #footerFilterBar li a {
+	text-decoration: none;
+}
+	
+#content-panel .ui-panel-page-content-position-right,
+.ui-panel-dismiss-open.ui-panel-dismiss-position-right {
+    left: -10em;
+    right: 10em;
+}
+#content-panel .ui-panel-animate.ui-panel-page-content-position-right.ui-panel-page-content-display-reveal {
+    left: 0;
+    right: 0;
+    -webkit-transform: translate3d(10em,0,0);
+    -moz-transform: translate3d(10em,0,0);
+    transform: translate3d(10em,0,0);
+}
+
+
+
+/* Reference panel styles */
+#reference-panel {
+	height: 100%;
+	overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: block !important;
+}
+
+#reference-panel.ui-panel {
+    width: 10em !important;	
+}
+
+#reference-panel.ui-panel-closed {
+    width: 0 !important;
+}
+
+#reference-panel.ui-panel-position-right.ui-panel-display-reveal {
+    -webkit-box-shadow: 0px 0 0px !important;
+    -moz-box-shadow: 0px 0 0px !important;
+    box-shadow: 0px 0 0px !important;
+}
+
+#reference-panel ul {
+    list-style-position: inside !important;
+}
+
+.ui-panel-page-content-open.ui-panel-page-content-position-left {
+	margin-right: 10em !important;
+}
+
+.ui-panel-page-content-open.ui-panel-page-content-position-right {
+	margin-left: 10em !important;
+}
+
+.ui-panel-page-content-open {
+	width: auto !important;
+}
+
+.ui-panel-animate.ui-panel-page-content-position-right {
+    left: 0;
+    right: 0;
+    -webkit-transform: translate3d(-10em,0,0) !important;
+    -moz-transform: translate3d(-10em,0,0) !important;
+    transform: translate3d(-10em,0,0) !important;
+}
+
+
+/* disable "dismiss" on wide viewports */
+.ui-panel-dismiss {
+	display: none !important;
+}
+
+/* modal panel styles */
+#modal-panel {
+	overflow-y: auto !important;
+}
+#modal-panel .ui-header h1 {
+	color: #000 !important;
+}
+#modal-panel .ui-content {
+}
+

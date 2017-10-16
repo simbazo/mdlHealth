@@ -1,0 +1,65 @@
+{
+    "setup": {
+        "requiresRegistration": true,
+        "downloadDomain": "http://cdn.appenberg.co.za",
+        "downloadPath": "/pack/",
+        "localPath": "www/data/",
+        "localImagePath": "www/data/img/",
+        "localMediaPath": "www/data/files/",
+        "appPath": "appenberg_data/",
+        "webPath":  "data/"
+    },
+    "content": {
+        "location": "local",
+        "imageLocation":  "local",
+        "mediaLocation": "local"
+    },
+    "menu": {
+        "forceShowToc": true
+    },
+    "footer": {
+        "showfilterBar": false,
+        "filterLevel" : 1
+    },
+    "version": {
+        "applicationKey": "4",
+        "packageKey": "a81e789d-d6e9-11e5-8938-000c29ccfea5",
+        "releaseKey": "7d792aa1-d7ba-11e5-8938-000c29ccfea5",
+        "versionKey": "2d87099f-d7bc-11e5-8938-000c29ccfea5"
+    },
+    "client": {
+        "apiKey": "000000001",
+        "apiExpiry": "01-01-2100"
+    },
+    "notifications": {
+        "errors": {
+            "showErrors": true,
+            "showErrorsAs": "view",
+            "pushErrors": true,
+            "scheduleErrors":  true
+        },
+        "newsfeed": {
+            "hasNewsfeed": false,
+            "showNewsfeed": false,
+            "numberNewsfeeds": 2,
+            "showAs": "view"
+        }
+    },
+    "webview": {
+        "show": true,
+        "views": [
+            {
+                "title": "Appenberg home",
+                "url": "http://www.appenberg.co.za"
+            },
+            {
+                "title" : "Appenberg library",
+                "url": "apps.appenberg.co.za"
+            },
+            {
+                "title": "Appenberg training",
+                "url":  "moodle.appenberg.co.za"
+            }
+        ]
+    }
+}

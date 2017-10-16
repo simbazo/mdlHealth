@@ -1,0 +1,75 @@
+<div class="ui-corner-all custom-corners">
+    <div class="ui-bar ui-bar-a">
+        <h3>MiDigitalLife Registration</h3>
+    </div>
+    <div class="ui-body ui-body-a">
+        <div class="container">
+            <div class="register_cvontainer"
+            <form id="registerForm" role="form">
+                <input type="hidden" id="app_id" />
+                <input type="hidden" id="device_id" />
+                <input type="hidden" id="otp" />
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of birth</label>
+                    <input type="text" class="form-control" name="dob" id="dob" placeholder="YYYY-MM-DD" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="sex">Sex</label>
+                    <select name="sex" id="sex">
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select name="role" id="role">
+                        <option>Select your professional role:</option>
+                        <option value="specialist">Specialist</option>
+                        <option value="gp">General Practitioner</option>
+                        <option value="nurse">Nurse</option>
+                        <option value="worker">Health worker</option>
+                        <option value="layman">Layman</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="terms" class="control-label">Terms and Conditions</label>
+                    <textarea id="terms" name="terms" style="width: 100%; max-height: 100px; scrolling:auto;text-align:left;">
+                        
+                    </textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="agree" name="agree"> <strong>Agree to Terms & Conditions</strong>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="confirm-container" class="hidden">
+                    <div class="form-group">
+                        <label for="dob">OTP</label>
+                        <input type="text" class="form-control" name="confirm-otp" id="confirm_otp" placeholder="Enter the OTP emailed to you" />
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="agree" name="agree"> <strong>Resend OTP</strong>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="agree_terms" name="agree_terms" type="button" class="btn btn-block btn-primary" disabled="disabled">
+                    Register
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

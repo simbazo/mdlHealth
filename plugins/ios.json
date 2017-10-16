@@ -1,0 +1,49 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        },
+        "cordova-plugin-code-push": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        },
+        "code-push": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        },
+        "cordova-plugin-zip": {
+            "PACKAGE_NAME": "com.midigitallife.health"
+        }
+    }
+}
