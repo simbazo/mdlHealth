@@ -1,0 +1,56 @@
+<div data-role="header" data-theme="a">
+    <h1>Register</h1>
+</div>
+<div role="main" class="ui-content">
+    <form style="margin: 10px 20px 10px 20px;">
+        <fieldset>
+            <legend>General information</legend>
+            <label for="txtRegName" class="ui-hidden-accessible">Name:</label>
+            <input name="regName" id="txtRegName" value="" placeholder="First name" type="text" data-theme="a">
+
+            <label for="txtRegSurname" class="ui-hidden-accessible">Surname:</label>
+            <input name="regSurname" id="txtRegSurname" value="" placeholder="Surname" type="text" data-theme="a">
+
+            <label for="txtRegDOB" class="ui-hidden-accessible">Date of birth:</label>
+            <input name="regDOB" id="txtRegDOB" value="" placeholder="Date of birth" type="text" data-theme="a">
+
+            <select name="regGender" id="selRegGender">
+                <option>Select your gender:</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select>
+
+            <label for="txtRegEmail" class="ui-hidden-accessible">Email:</label>
+            <input name="regEmail" id="txtRegEmail" value="" placeholder="Email" type="text" data-theme="a">
+
+            <label for="txtRegFacility" class="ui-hidden-accessible">Facility:</label>
+            <input name="regFacility" id="txtRegFacility" value="" placeholder="Facility" type="text" data-theme="a">
+
+            <label for="txtRegStaffNo" class="ui-hidden-accessible">Staff number:</label>
+            <input name="regStaffNo" id="txtRegStaffNo" value="" placeholder="Staff number" type="text" data-theme="a">
+
+            <select name="regRole" id="selRegRole">
+                <option>Select your professional role:</option>
+                <option value="specialist">Specialist</option>
+                <option value="gp">General Practitioner</option>
+                <option value="nurse">Nurse</option>
+                <option value="health worker">Health worker</option>
+                <option value="layman">Layman</option>
+            </select>
+
+            <!--<p style="margin-bottom: 5px;">
+                <label for="txtTerms"><strong>Terms and Conditions:</strong></label>
+                <div class="terms-scroll-wrapper">
+                    <iframe src="templates/Terms.html"></iframe>
+                </div>
+            </p>-->
+
+            <label>
+                <input name="regTerms" id="chkRegTerms" type="checkbox">
+                I agree to the Terms and Conditions
+            </label>
+
+            <button id="btnRegister" type="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check" disabled>Register</button>
+        </fieldset>
+    </form>
+</div>

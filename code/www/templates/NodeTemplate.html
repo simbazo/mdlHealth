@@ -1,0 +1,27 @@
+<div class="menu-item-container">
+    <% if (Indexing) { %>
+        <div class="menu-item-index-outer">
+            <div class="menu-item-index-inner">
+                <%= Indexing %>
+            </div>
+        </div>
+    <% } %>
+    <% if (MediaExt != null && MediaExt.toLowerCase() != "json") { %>
+        <div class="menu-item-media-icon">
+            <img src="./images/media_icons/<%= MediaExt %>.png" width="16" height="16" />
+        </div>
+    <% } %>
+    <div class="menu-item-text">        
+        <%= Header %>
+    </div>
+    <% if (SubHeader) { %>
+        <div class="menu-item-subtext">
+            <%= SubHeader %>
+        </div>
+    <% } %>
+    <% if (Icon_path) { %>
+        <div class="menu-item-icon">       
+            <img src="<%= Icon_path %>" width="24" height="24" />        
+        </div>
+    <% } %>
+</div>
